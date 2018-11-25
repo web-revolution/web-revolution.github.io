@@ -2,7 +2,7 @@
  var $randomnbr1 = $('.nbr-1');
  var $timer = 30;
  var letters = ["w", "e", "b", "d", "e", "s", "i", "g", "n"];
- var letters1 = ["h", "i", " ", "t", "h", "e", "r", "e"];
+ var letters1 = ["h", "i", "", "t", "h", "e", "r", "e"];
  var randomnbr_name = ".nbr";
  var randomnbr_name1 = ".nbr-1";
 
@@ -16,7 +16,7 @@ function terminator ($randomnbr, $timer, letters, name) {
 
 	$randomnbr.each(function() {
 
-	 change = Math.round(Math.random()*100);
+	 change = Math.round(Math.random() * 100);
 	 	$(this).attr('data-change', change);
 	 });
 
@@ -34,7 +34,7 @@ function terminator ($randomnbr, $timer, letters, name) {
 	      $data++;
 
 	      $randomnbr.each(function() {
-	           if(parseInt($(name).attr('data-number')) > parseInt($(name).attr('data-change'))) {
+	           if(parseInt($(this).attr('data-number')) > parseInt($(this).attr('data-change'))) {
 	                index = $(name + '.ltr').index(this);
 	                $(this).html(letters[index]);
 	                $(this).removeClass(name);
