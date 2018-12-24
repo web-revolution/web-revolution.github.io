@@ -1,4 +1,4 @@
-
+window.onload = function () {
 	var fonts = [
 		"Calibri",
 		"Arial",
@@ -16,3 +16,4 @@
 		document.querySelector(".glitch").style.fontFamily = fonts[i]
 		i++;
 	}, 250)
+}
