@@ -3,7 +3,6 @@ body {
 	margin: 0;
 	background-color: #000;
 	opacity: 1;
-	font-size: 21px;
 }
 
 body:before {
@@ -12,7 +11,7 @@ body:before {
 	content: "";
 	width: 100%;
 	height: 100%;
-
+	
 }
 
 .glitch {

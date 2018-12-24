@@ -1,17 +1,19 @@
 window.onload = function () {
 	var fonts = [
 		"Calibri",
-		"Arial",
+		"Candara Light",
 		"Papyrus",
-		"Times New Roman",
+		"Edwardian Script ITC",
 		"Tahoma",
 		"Wingdings",
 		"Centaur",
-		"Viner Hand ITC"
+		"Matura MT Script Capitals"
 	]
 	var i = 0;
+	var length = fonts.length - 1;
+	console.log(length)
 	setInterval(function() {
-		if (i > fonts.length)
+		if (i > length)
 			i = 0
 		document.querySelector(".glitch").style.fontFamily = fonts[i]
 		i++;
