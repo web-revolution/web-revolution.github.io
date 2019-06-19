@@ -18,5 +18,15 @@ window.onscroll = () => {
 var scroll = new SmoothScroll('.cap a[href*="#"]', {
 	offset: 150
 });
+var scroll = new SmoothScroll('.footer__nav a[href*="#"]', {
+	offset: 150
+});
 
 var scroll = new SmoothScroll('.to-top');
+
+window.onload = function () {
+	addClass(".loader img", "hide");
+	setTimeout(function() {
+		addClass(".loader", "hide");
+	}, 1000);
+}
