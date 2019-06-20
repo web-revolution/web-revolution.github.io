@@ -21,6 +21,10 @@
 
 	}
 
+	.headline.like-h2::before, .headline.like-h2::after {
+		width: 0;
+	}
+
 	.mouse {
 		display: none;
 	}

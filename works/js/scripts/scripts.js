@@ -25,7 +25,7 @@ var scroll = new SmoothScroll('.footer__nav a[href*="#"]', {
 var scroll = new SmoothScroll('.to-top');
 
 window.onload = function () {
-	addClass(".loader img", "hide");
+	addClass(".loader .inner", "hide");
 	setTimeout(function() {
 		addClass(".loader", "hide");
 	}, 1000);
