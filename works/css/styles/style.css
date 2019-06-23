@@ -95,8 +95,8 @@ body {
 }
 
 .btn--empty:hover {
-	background-color: #fff;
-	color: #555;
+	background-color: rgba(255, 255, 255, .4);
+	color: #fff;
 }
 
 .like-h2 {
@@ -164,6 +164,7 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	box-sizing: border-box;
+	box-shadow: ;
 }
 
 .header:before {
@@ -439,9 +440,6 @@ body {
 	margin-bottom: 50px;
 }
 
-.s-offers .headline {
-}
-
 .s-offers .item .like-h2 {
 	z-index: 100;
 	font-size: 21px;
@@ -549,7 +547,7 @@ body {
 }
 
 .s-works img {
-	height: 250px;
+	height: 280px;
 }
 
 .s-works .btn .fa {
