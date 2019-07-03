@@ -28,6 +28,46 @@
 }
 
 @media (max-width: 767px) {
+	.s-instruction {
+		height: 500px;
+	}
+	.s-instruction .like-h2 {
+		font-size: 24px;
+	}
+
+	.footer .logo {
+		width: 50%;
+	}
+
+	.s-offers:after {
+		display: none;
+	}
+
+	.s-question .contact  {
+		height: 95%;
+	}
+
+	.footer {
+		margin-top: 150px;
+	}
+
+	.s-offers:before {
+		display: none;
+	}
+
+	.s-works ul {
+		text-align: center;
+		display: none;
+	}
+
+	.s-works .like-h2 {
+		text-align: center;
+	}
+
+	.s-works ul li span {
+		font-size: 14px;
+		margin-bottom: 100px
+	}
 
 	.headline.like-h2::before, .headline.like-h2::after {
 		width: 0;
@@ -50,6 +90,20 @@
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 575px) {
+	.btn__mnu {
+		/*background-color: red;*/
+		position: absolute;
+		top: -114px;
+	}
 
+	.s-we .item {
+		height: 200px;
+		line-height: 200px;
+		text-align: center;
+	}
+
+	.s-we .item .like-h2 {
+		margin-top: 20px;
+	}
 }
