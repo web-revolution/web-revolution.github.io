@@ -107,3 +107,26 @@
 		margin-top: 20px;
 	}
 }
+
+@media (max-width: 370px) {
+	.btn__mnu {
+		height: 45px;
+		width: 110%;
+		position: absolute;
+		right: -5px;
+		top: -111px;
+	}
+
+	.header .cap .header__logo img { 
+		width: 150px;
+		margin-top: 5px;
+	}
+
+	.btn__mnu a {
+		font-size: 10px;
+	}
+
+	.header__mnu ul li a {
+		font-size: 14px;
+	}
+}
