@@ -117,6 +117,14 @@
 		top: -111px;
 	}
 
+	.s-question .name-s {
+		display: none;
+	}
+
+	.s-instruction .inner  {
+		width: 80%;
+	}
+
 	.header .cap .header__logo img { 
 		width: 150px;
 		margin-top: 5px;
