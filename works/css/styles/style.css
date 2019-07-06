@@ -6,10 +6,6 @@
 	box-sizing: border-box;
 }
 
-.marquiz__bg .marquiz__bg_open {
-	z-index: 1000000;
-}
-
 ::-webkit-scrollbar {
 	width: 8px;
 	background-color: transparent;
@@ -141,7 +137,7 @@ body {
 	/*background-color: rgba(0, 0, 0, .6);*/
 	position: fixed;
 	width: 100%;
-	z-index: 999999;
+	z-index: 1000;
 	transition: .5s;
 	top: 0;
 }
