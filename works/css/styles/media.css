@@ -143,3 +143,10 @@
 		font-size: 14px;
 	}
 }
+
+@media (max-width: 354px) {
+	.inner-header .btn {
+		font-style: 10px;
+		padding: 10px 25px;
+	}
+}
