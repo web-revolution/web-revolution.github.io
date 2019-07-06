@@ -113,8 +113,13 @@
 		height: 45px;
 		width: 110%;
 		position: absolute;
-		right: -5px;
+		right: -10px;
 		top: -111px;
+	}
+
+	.inner-header .btn {
+		font-style: 10px;
+		padding: 10px 30px;
 	}
 
 	.s-question .name-s {
