@@ -82,6 +82,7 @@ body {
 	cursor: pointer;
 	transition: .3s;
 	text-decoration: none;
+	text-align: center;
 }
 
 .btn:hover {
@@ -420,7 +421,7 @@ body {
 	border-radius: 10px;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
 	position: relative;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 }
 
 .s-offers .item .like-h2 {
@@ -467,6 +468,7 @@ body {
 .s-works .like-h2.name-s {
 	color: #565656;
 	font-size: 28px;
+	margin-bottom: 20px;
 }
 
 .s-works ul {
@@ -525,13 +527,19 @@ body {
 	margin-bottom: 50px;
 }
 
-.s-works .works .col-md-4 {
+.s-works .works .col-md-4, .col-md-6, .col-md-5, .col-md-3 {
 	padding: 0px 5px;
 }
 
 .s-works img {
-	height: 280px;
+	height: 330px;
 }
+
+
+/*.s-works .item {
+	height: 300px;
+	overflow: hidden;
+}*/
 
 .s-works .btn .fa {
 	margin-right: 20px;
