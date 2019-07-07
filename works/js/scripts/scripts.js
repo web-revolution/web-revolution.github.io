@@ -30,3 +30,23 @@ window.onload = function () {
 		addClass(".loader", "hide");
 	}, 1000);
 }
+
+document.getElementById("js-size-kitchen").onclick = function () {
+	addClass(".overlay", "active");
+	addClass(".form-question", "active");
+}
+
+document.getElementById("js-send-question").onclick = function () {
+	addClass(".overlay", "active");
+	addClass(".form-question", "active");
+}
+
+document.getElementById("js-answer").onclick = function () {
+	addClass(".overlay", "active");
+	addClass(".form-question", "active");
+}
+
+document.getElementById("js-close-form-question").onclick = function () {
+	removeClass(".overlay", "active");
+	removeClass(".form-question", "active");
+}
