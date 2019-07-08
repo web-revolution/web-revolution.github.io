@@ -242,6 +242,7 @@ body {
 	line-height: 45px;
 	text-align: center;
 	transition: .2s;
+	cursor: pointer;
 }
 
 .inner-header {
