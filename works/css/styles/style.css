@@ -10,6 +10,10 @@ a {
 	cursor: pointert;
 }
 
+input {
+	font-family: Cambria;
+}
+
 ::-webkit-scrollbar {
 	width: 8px;
 	background-color: transparent;
