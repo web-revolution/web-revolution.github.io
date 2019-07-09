@@ -6,6 +6,10 @@
 	box-sizing: border-box;
 }
 
+body {
+	scroll-behavior: smooth;
+}
+
 a {
 	cursor: pointert;
 }
@@ -71,12 +75,6 @@ input {
 .loader.hide {
 	opacity: 0;
 	z-index: -100;
-}
-
-
-body {
-	opacity: 1;
-	overflow-y: scrollbar;
 }
 
 .btn {
@@ -181,7 +179,7 @@ body {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, .55);
+	background-color: rgba(0, 0, 0, .6);
 }
 
 .header__mnu ul {
@@ -256,7 +254,7 @@ body {
 	margin-top: 20px;
 	width: 80%;
 	margin-bottom: 50px;
-	font-size: 19px;
+	font-size: 20px;
 	font-family: Cambria;
 	color: #fff;
 }
@@ -857,4 +855,10 @@ body {
 	width: 80%;
 	margin: 0 auto;
 	margin-bottom: 40px;
+}
+
+body {
+	opacity: 1;
+	overflow-y: scrollbar;
+	line-height: 1.7;
 }
