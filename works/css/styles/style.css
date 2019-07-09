@@ -353,14 +353,10 @@ body {
 	height: 150px;
 	line-height: 140px;
 	margin-bottom: 40px;
-	cursor: pointer;
 	transition: .2s;
 	box-shadow: 0 3px 12px rgba(0, 0, 0, .16);
 }
 
-.s-we .item:hover {
-	box-shadow: 0 3px 22px rgba(0, 0, 0, .16);
-}
 
 .s-we .item .like-h2 {
 	line-height: 1.7;
@@ -814,7 +810,37 @@ body {
 	padding: 0;
 	position: absolute;
 	right: 20px;
-	font-family: Arial;
+	font-family: Calibria;
+	background-color: #f6f6f6;
+	color: black;
+}
+
+.overlay .form-question .close.btn:hover {
+	box-shadow: none;
+	background-color: #D5D5D5;
+}
+
+.overlay .form-question .close.btn div {
+	width: 16px;
+	height: 2px;
+	background-color: #444;
+	border-radius: 10px;
+	position: absolute;
+	top: 17px;
+	left: 9.5px;
+	transition: .2s;
+}
+
+.overlay .form-question .close.btn:hover div {
+	background-color: #fff;
+}
+
+.overlay .form-question .close.btn div:nth-child(1) {
+	transform: rotate(45deg);
+}
+
+.overlay .form-question .close.btn div:nth-child(2) {
+	transform: rotate(-45deg);
 }
 
 .overlay .form-question .like-h2 {
