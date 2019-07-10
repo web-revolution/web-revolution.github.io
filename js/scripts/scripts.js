@@ -15,14 +15,15 @@ window.onscroll = () => {
 	document.querySelector(".header").style.transform = "translate(0% " + scrollTop + "%" 
 }
 
-var scroll = new SmoothScroll('.cap a[href*="#"]', {
+new SmoothScroll('.cap a[href*="#"]', {
 	offset: 150
-});
-var scroll = new SmoothScroll('.footer__nav a[href*="#"]', {
-	offset: 150
-});
+})
 
-var scroll = new SmoothScroll('.to-top');
+new SmoothScroll('.footer__nav a[href*="#"]', {
+	offset: 150
+})
+
+new SmoothScroll('.to-top');
 
 window.onload = function () {
 	addClass(".loader .inner", "hide");
@@ -31,22 +32,22 @@ window.onload = function () {
 	}, 1000);
 }
 
-document.getElementById("js-size-kitchen").onclick = function () {
-	addClass(".overlay", "active");
-	addClass(".form-question", "active");
-}
+click ("#js-size-kitchen", function () {
+	openRequest();
+})
 
-document.getElementById("js-send-question").onclick = function () {
-	addClass(".overlay", "active");
-	addClass(".form-question", "active");
-}
+click ("#js-answer", function () {
+	openRequest();
+})
 
-document.getElementById("js-answer").onclick = function () {
-	addClass(".overlay", "active");
-	addClass(".form-question", "active");
-}
+click ("#js-send-question", function () {
+	openRequest();
+})
 
-document.getElementById("js-close-form-question").onclick = function () {
-	removeClass(".overlay", "active");
-	removeClass(".form-question", "active");
-}
+click ("#js-contact-query", function () {
+	openRequest();
+})
+
+click ("#js-close-form-question", function () {
+	closeRequest();
+})

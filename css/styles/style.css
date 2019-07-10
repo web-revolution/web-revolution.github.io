@@ -724,15 +724,16 @@ body {
 	border-radius: 10px;
 }
 
-.footer__nav ul li a {
+.footer__nav ul li a, .footer__nav ul li span {
 	color: #fff;
 	text-decoration: none;
 	transition: .5s;
 	font-size: 17px;
 	font-family: Cambria;
+	cursor: pointer;
 }
 
-.footer__nav ul li a:hover {
+.footer__nav ul li a:hover, .footer__nav ul li span:hover {
 	color: #9ACF1F;
 }
 

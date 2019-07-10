@@ -12,3 +12,23 @@ function removeClass (el, className) {
 	else
 		return false
 }
+
+function click (className, ret) {
+	if (className === Object) {
+		for (nameClass in className)
+			document.querySelector(className[nameClass]).onclick = ret;
+	} else
+		document.querySelector(className).onclick = ret;
+}
+
+
+
+function openRequest () {
+	addClass(".overlay", "active");
+	addClass(".form-question", "active");
+}
+
+function closeRequest () {
+	removeClass(".overlay", "active");
+	removeClass(".form-question", "active");
+}
