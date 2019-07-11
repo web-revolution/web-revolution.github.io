@@ -53,19 +53,35 @@ click ("#js-close-form-question", function () {
 })
 
 click ("#js-send-question-query", function () {
-	removeClass(".form-question", "active");
-	addClass(".notify", "active");
-	setTimeout(function() {
-		removeClass(".notify", "active");
-		removeClass(".overlay", "active");
-	}, 2000)
+	if ( document.querySelector("input").value === "" ) {
+		addClass(".overlay .form-question", "wrong-inputs");
+			alert("Заполните все поля")
+		setTimeout(function() {
+			removeClass(".overlay .form-question", "wrong-inputs");
+		}, 2000)
+	} else {
+		removeClass(".form-question", "active");
+		addClass(".notify", "active");
+		setTimeout(function() {
+			removeClass(".notify", "active");
+			removeClass(".overlay", "active");
+		}, 2000)
+	}
 })
 
 click ("#js-send-query-question", function () {
-	addClass(".overlay", "active");
-	addClass(".notify", "active");
-	setTimeout(function() {
-		removeClass(".notify", "active");
-		removeClass(".overlay", "active");
-	}, 2000)
+		if ( document.querySelector("input").value == "" && document.querySelector("textarea").value == "") {
+				addClass(".s-question .form-question", "wrong-inputs");
+				alert("Заполните все поля")
+				setTimeout(function() {
+					removeClass(".s-question .form-question", "wrong-inputs");
+				}, 2000)
+	} else {
+		addClass(".overlay", "active");
+		addClass(".notify", "active");
+		setTimeout(function() {
+			removeClass(".notify", "active");
+			removeClass(".overlay", "active");
+		}, 2000)
+	}
 })

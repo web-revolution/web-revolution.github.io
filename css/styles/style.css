@@ -622,6 +622,11 @@ body {
 	font-size: 18px;
 }
 
+.s-question .form-question.wrong-inputs input, .s-question .form-question.wrong-inputs textarea {
+	transition: .5s;
+	background-color: rgba(202,50,8, .4);
+}
+
 .s-question .form-question input:focus, textarea:focus {
 	box-shadow: 0 3px 15px rgba(0, 0, 0, .16);
 	background-color: #fff;
@@ -784,6 +789,12 @@ body {
 	opacity: 1;
 	z-index: 10000;
 
+}
+
+.overlay .form-question.wrong-inputs input {
+	border: 1px solid #CA3208;
+	transition: .5s;
+	background-color: rgba(202,50,8, .4);
 }
 
 .overlay .form-question {
