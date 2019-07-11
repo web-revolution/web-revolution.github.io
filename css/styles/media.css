@@ -32,6 +32,10 @@
 		height: 500px;
 	}
 
+	.notify {
+		width: 80%;
+	}
+
 	.overlay .form-question {
 		width: 80%;
 	}

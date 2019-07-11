@@ -51,3 +51,21 @@ click ("#js-contact-query", function () {
 click ("#js-close-form-question", function () {
 	closeRequest();
 })
+
+click ("#js-send-question-query", function () {
+	removeClass(".form-question", "active");
+	addClass(".notify", "active");
+	setTimeout(function() {
+		removeClass(".notify", "active");
+		removeClass(".overlay", "active");
+	}, 2000)
+})
+
+click ("#js-send-query-question", function () {
+	addClass(".overlay", "active");
+	addClass(".notify", "active");
+	setTimeout(function() {
+		removeClass(".notify", "active");
+		removeClass(".overlay", "active");
+	}, 2000)
+})

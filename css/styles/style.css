@@ -797,10 +797,29 @@ body {
 	text-align: center;
 	box-shadow: 0px 0px 21px rgba(0, 0, 0, .16);
 	transition: .6s;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	opacity: 0;
+	z-index: -1000;
+}
+
+.overlay .form-question::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 12px;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, 1));
+	content: "";
+	z-index: -1;
 }
 
 .overlay .form-question.active {
 	top: 50%;
+	opacity: 1;
+	z-index: 1000;
 }
 
 .overlay .form-question .close.btn {
@@ -888,4 +907,37 @@ body {
 	opacity: 1;
 	overflow-y: scrollbar;
 	line-height: 1.7;
+}
+
+.notify.active {
+	top: 50%;
+	opacity: 1;
+	z-index: 1000;
+}
+
+.notify {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 50px;
+	border-radius: 12px;
+	font-size: 30px;
+	text-align: center;
+	z-index: -1000;
+	opacity: 0;
+	transition: .6s;
+}
+
+.notify p {
+	color: black;
+	font-family: Segoe Script;
+	font-size: 23px;
+	margin-top: 20px;
+}
+
+.notify .fa {
+	font-size: 66px;
+	color: #99CA25;
 }
