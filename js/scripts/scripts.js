@@ -1,6 +1,6 @@
-window.onscroll = () => {
+window.onscroll = function () {
 	var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-	if (scrollTop > 200) {
+	if (scrollTop > 100) {
 			addClass(".cap", "white");
 	} else {
 			removeClass(".cap", "white");
@@ -53,9 +53,9 @@ click ("#js-close-form-question", function () {
 })
 
 click ("#js-send-question-query", function () {
-	if ( document.querySelector("input").value === "" ) {
+	if ( document.querySelector(".input-form-question").value === "" ) {
 		addClass(".overlay .form-question", "wrong-inputs");
-			alert("Заполните все поля")
+		alert("Заполните все поля")
 		setTimeout(function() {
 			removeClass(".overlay .form-question", "wrong-inputs");
 		}, 2000)
@@ -70,7 +70,7 @@ click ("#js-send-question-query", function () {
 })
 
 click ("#js-send-query-question", function () {
-		if ( document.querySelector("input").value == "" && document.querySelector("textarea").value == "") {
+		if ( document.querySelector(".form-question-input").value == "" && document.querySelector(".form-question-textarea").value == "") {
 				addClass(".s-question .form-question", "wrong-inputs");
 				alert("Заполните все поля")
 				setTimeout(function() {
