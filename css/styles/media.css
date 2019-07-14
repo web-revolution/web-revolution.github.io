@@ -107,13 +107,13 @@
 
 @media (max-width: 360px) {
 	.s-offers .item .inner-content.top375 {
-		top: 53%;
+		top: 60%;
 	}
 }
 
 @media (max-width: 320px) {
 	.s-offers .item .inner-content.top375 {
-		top: 40%;
+		top: 50%;
 	}
 }
 

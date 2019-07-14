@@ -431,19 +431,21 @@ body {
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
-	height: 300px;
+	height: 350px;
 	border-radius: 10px;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
 	position: relative;
 	margin-bottom: 10px;
 	z-index: 0;
+	transition: .3s;
+	cursor: pointer;
 }
 
 .s-offers .item .line {
-	width: 40%;
-	background-color: red;
+	width: 20%;
+	/*background-color: red;*/
 	border-radius: 10px;
-	height: 8px;
+	height: 6px;
 	margin-top: -10px;
 	/*position: absolute;*/
 	/*bottom: 15%;*/
@@ -451,15 +453,23 @@ body {
 	/*left: 0;*/
 }
 
+.line-yelow {
+	background-color: #99CA25;
+}
+
+.line-blue {
+	background-color: #2CC19D;
+}
+
 .s-offers .item .inner-content.top53 {
-	top: 53%;
+	top: 60%;
 	/*position: absolute;*/
 }
 
 .s-offers .item .inner-content {
 	z-index: 100;
 	position: relative;
-	top: 65%;
+	top: 70%;
 	left: 10%;
 	width: 80%;
 	font-family: Cambria;
