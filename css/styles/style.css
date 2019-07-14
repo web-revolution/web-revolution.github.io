@@ -15,7 +15,7 @@ a {
 }
 
 input {
-	font-family: Cambria;
+	font-family: Arial;
 }
 
 ::-webkit-scrollbar {
@@ -109,6 +109,7 @@ input {
 	font-size: 42px;
 	font-family: Segoe Script;
 	color: #fff;
+	margin: 0;
 }
 
 p {
@@ -184,6 +185,8 @@ body {
 
 .header__mnu ul {
 	list-style-type: none;
+	text-align: right;
+	margin-right: 50px;
 }
 
 .header__mnu ul li {
@@ -350,16 +353,24 @@ body {
 .s-we .item {
 	border-radius: 15px;
 	padding: 45px 40px;
-	height: 150px;
-	line-height: 140px;
-	margin-bottom: 40px;
-	transition: .2s;
+	/*line-height: 140px;*/
+	margin-bottom: 20px;
+	/*transition: .2s;*/
 	box-shadow: 0 3px 12px rgba(0, 0, 0, .16);
 }
 
+.s-we p {
+	color: black;
+}
 
-.s-we .item .like-h2 {
-	line-height: 1.7;
+.s-we .item img {
+	width: 70px;
+}
+
+
+.s-we .item h1 {
+	font-size: 18px;
+	/*margin-left: 30px;*/
 }
 
 .text {
@@ -428,15 +439,37 @@ body {
 	z-index: 0;
 }
 
-.s-offers .item .like-h2 {
-	z-index: 100;
-	font-size: 21px;
-	position: relative;
-	top: 66%;
-	left: 10%;
-	width: 70%;
-	font-family: Cambria;
+.s-offers .item .line {
+	width: 40%;
+	background-color: red;
+	border-radius: 10px;
+	height: 8px;
+	margin-top: -10px;
+	/*position: absolute;*/
+	/*bottom: 15%;*/
+	/*z-index: 100;*/
+	/*left: 0;*/
 }
+
+.s-offers .item .inner-content.top53 {
+	top: 53%;
+	/*position: absolute;*/
+}
+
+.s-offers .item .inner-content {
+	z-index: 100;
+	position: relative;
+	top: 65%;
+	left: 10%;
+	width: 80%;
+	font-family: Cambria;
+
+}
+
+.s-offers .item .like-h2 {
+	font-size: 21px;
+}
+
 
 .s-offers {
 	position: relative;
@@ -930,6 +963,7 @@ body {
 	position: absolute;
 	top: 0;
 	left: 50%;
+	width: 40%;
 	transform: translate(-50%, -50%);
 	background-color: #fff;
 	padding: 50px;
@@ -945,7 +979,7 @@ body {
 	color: black;
 	font-family: Segoe Script;
 	font-size: 23px;
-	margin-top: 20px;
+	margin-top: 25px;
 }
 
 .notify .fa {

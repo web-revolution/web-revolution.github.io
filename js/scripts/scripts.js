@@ -1,6 +1,6 @@
 window.onscroll = function () {
 	var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-	if (scrollTop > 100) {
+	if (scrollTop > 10) {
 			addClass(".cap", "white");
 	} else {
 			removeClass(".cap", "white");

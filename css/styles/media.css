@@ -101,20 +101,31 @@
 
 @media (max-width: 575px) {
 	.btn__mnu {
-		/*background-color: red;*/
 		position: absolute;
 		top: -114px;
 	}
 
-	.s-we .item {
-		height: 200px;
-		line-height: 200px;
-		text-align: center;
+	.s-offers .item .inner-content {
+		width: 70%;
 	}
 
-	.s-we .item .like-h2 {
-		margin-top: 20px;
+	.s-we .item img {
+		width: 30%;
+		/*display: none;*/
 	}
+
+	.s-we .item {
+		min-height: 150px;
+	} 
+
+	.s-we .item .like-h2 {
+		font-size: 19px;
+		position: absolute;
+		top: 25%;
+		left: 35%;
+		width: 50%;
+	}
+
 
 	.overlay .form-question {
 		width: 90%;
@@ -137,6 +148,10 @@
 		position: absolute;
 		right: -10px;
 		top: -111px;
+	}
+
+	.s-offers .item .inner-content {
+		width: 80%;
 	}
 
 	.inner-header .btn {
