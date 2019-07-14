@@ -99,15 +99,53 @@
 	}
 }
 
+@media (max-width: 410px) {
+	.s-offers .item .inner-content.top375 {
+		top: 45%;
+	}
+}
+
+@media (max-width: 360px) {
+	.s-offers .item .inner-content.top375 {
+		top: 53%;
+	}
+}
+
+@media (max-width: 320px) {
+	.s-offers .item .inner-content.top375 {
+		top: 40%;
+	}
+}
+
 @media (max-width: 575px) {
 	.btn__mnu {
 		position: absolute;
 		top: -114px;
 	}
 
+	.s-instruction .btn {
+		font-size: 15px;
+		padding: 15px 30px;
+	}
+
+	.s-instruction .inner {
+		width: 90%;
+	}
+
 	.s-offers .item .inner-content {
 		width: 70%;
 	}
+
+	.s-question .contact .like-h2 {
+		font-size: 27px;
+		width: 70%;
+		text-align: left;
+		margin-left: -13px;
+	} 
+	
+.s-we .item img:nth-child(1) {
+	margin-top: 5px;
+}
 
 	.s-we .item img {
 		width: 30%;
