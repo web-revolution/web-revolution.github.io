@@ -32,6 +32,10 @@
 		height: 500px;
 	}
 
+	.main-gallery img {
+		width: 100%;
+	}
+
 	.notify {
 		width: 80%;
 	}
@@ -103,13 +107,28 @@
 	.s-offers .item .inner-content.top375 {
 		top: 45%;
 	}
+	
+
+}
+
+@media (max-width: 370px) {
+	.s-offers .item .inner-content.top375 {
+		top: 60%;
+	}
 }
 
 @media (max-width: 360px) {
 	.s-offers .item .inner-content.top375 {
 		top: 60%;
 	}
+
+	.inner-header .p {
+		font-size: 16px;
+		margin: 30px 0;
+	}
 }
+
+
 
 @media (max-width: 320px) {
 	.s-offers .item .inner-content.top375 {
