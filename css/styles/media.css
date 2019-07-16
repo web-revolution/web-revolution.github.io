@@ -107,6 +107,12 @@
 	.s-offers .item .inner-content.top375 {
 		top: 45%;
 	}
+
+	.s-offers .block-text {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		width: 90%;
+	}
 	
 
 }
@@ -119,7 +125,7 @@
 
 @media (max-width: 360px) {
 	.s-offers .item .inner-content.top375 {
-		top: 60%;
+		top: 50%;
 	}
 
 	.inner-header .p {
