@@ -106,7 +106,8 @@
 	.overlay .form-question {
 		top: 0;
 		right: 0;
-		height: 100vh;
+		/*height: 100vh;*/
+		height: 100%;
 		margin: 0 auto;
 		border-radius: 0;
 	}
@@ -114,6 +115,7 @@
 	.overlay .form-question p{
 		width: 90%;
 		/*display: none;*/
+		font-size: 15px;
 	}
 
 	.overlay .form-question:before {
