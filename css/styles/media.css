@@ -111,6 +111,11 @@
 		border-radius: 0;
 	}
 
+	.overlay .form-question p{
+		width: 90%;
+		/*display: none;*/
+	}
+
 	.overlay .form-question:before {
 		border-radius: 0;
 	}
