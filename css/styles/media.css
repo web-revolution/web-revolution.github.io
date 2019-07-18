@@ -102,6 +102,19 @@
 		margin-bottom: 30px;
 	}
 }
+@media (max-width: 415px) {
+	.overlay .form-question {
+		top: 0;
+		right: 0;
+		height: 100vh;
+		margin: 0 auto;
+		border-radius: 0;
+	}
+
+	.overlay .form-question:before {
+		border-radius: 0;
+	}
+}
 
 @media (max-width: 410px) {
 	.s-offers .item .inner-content.top375 {
