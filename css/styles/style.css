@@ -778,6 +778,10 @@ body {
 	box-shadow: 0 0px 34px rgba(0, 0, 0, .2);
 }
 
+.footer .contact {
+	padding: 10px 15px;
+}
+
 .footer .contact p {
 	font-size: 18px;
 	margin-top: 10px;

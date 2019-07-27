@@ -53,7 +53,7 @@ click ("#js-close-form-question", function () {
 })
 
 click ("#js-send-question-query", function () {
-	if ( document.querySelector(".input-form-question").value === "" ) {
+	if ( document.querySelector(".input-form-question-first").value == "" || document.querySelector(".input-form-question-second").value == "") {
 		addClass(".overlay .form-question", "wrong-inputs");
 		alert("Заполните все поля")
 		setTimeout(function() {
@@ -70,7 +70,10 @@ click ("#js-send-question-query", function () {
 })
 
 click ("#js-send-query-question", function () {
-		if ( document.querySelector(".form-question-input").value == "" && document.querySelector(".form-question-textarea").value == "") {
+		if ( document.querySelector(".form-question-input-first").value == "" || 
+			   document.querySelector(".form-question-input-second").value == "" ||
+			   document.querySelector(".form-question-input-third").value == "" ||
+		     document.querySelector(".form-question-textarea").value == "") {
 				addClass(".s-question .form-question", "wrong-inputs");
 				alert("Заполните все поля")
 				setTimeout(function() {
