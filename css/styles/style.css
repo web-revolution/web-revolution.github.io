@@ -94,7 +94,12 @@ input {
 }
 
 .btn:hover {
-	box-shadow: 0px 0px 21px rgba(0, 0, 0, .16);
+	/*box-shadow: 0px 0px 21px rgba(0, 0, 0, .16);*/
+	transform: scale(.99);
+}
+
+.btn:focus {
+	transform: scale(.9);
 }
 
 .btn--empty {
@@ -236,7 +241,8 @@ body {
 }
 
 .btn__mnu:hover {
-	box-shadow: 0px 0px 51px rgba(0, 0, 0, .25);
+	/*box-shadow: 0px 0px 51px rgba(0, 0, 0, .25);*/
+	transform: scale(.96);
 }
 
 .btn__mnu {
@@ -248,7 +254,7 @@ body {
 	/*padding: 20px 25px;*/
 	line-height: 45px;
 	text-align: center;
-	transition: .2s;
+	transition: .3s;
 	cursor: pointer;
 }
 
@@ -269,7 +275,14 @@ body {
 }
 
 .inner-header .btn {
-	margin-right: 30px;
+	margin-right: 50px;
+	display: inline-block;
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+
+.inner-header .btn:focus {
+	transform: scale(.9);
 }
 
 .inner-header .btn:last-child {
@@ -471,6 +484,14 @@ body {
 	/*text-decoration: none;*/
 }
 
+.s-offers .item:hover {
+	transform: scale(.99);
+}
+
+.s-offers .item:focus {
+	transform: scale(.90);
+}
+
 .s-offers .item:before:hover {
 	background: linear-gradient(#333333, #333333);
 }
@@ -664,6 +685,13 @@ body {
 	margin-bottom: 40px;
 }
 
+.s-instruction .btn {
+	/*transform: scale(.7);*/
+	display: block;
+	width: 40%;
+	margin: 0 auto;
+}
+
 .s-question .name-s, .s-question .form-name, .s-question .contact .like-h2  {
 	font-size: 27px;
 	color: #777;
@@ -754,7 +782,7 @@ body {
 	margin-left: 15px;
 	margin-top: 30px;
 	font-size: 25px;
-	 background: linear-gradient(to right, #dd5e89, #f7bb97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, #dd5e89, #f7bb97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	border-radius: 18px;
 }
 

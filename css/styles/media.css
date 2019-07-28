@@ -27,10 +27,19 @@
 
 }
 
+@media (max-width: 768px) {
+	.s-instruction .btn {
+		width: 60%;
+		font-size: 16px;
+	}
+}
+
 @media (max-width: 767px) {
 	.s-instruction {
 		height: 500px;
 	}
+
+
 
 	.main-gallery img {
 		width: 100%;
@@ -166,6 +175,11 @@
 	.s-offers .item .inner-content.top375 {
 		top: 50%;
 	}
+
+	.s-instruction .btn {
+		width: 160%;
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 575px) {
@@ -175,8 +189,10 @@
 	}
 
 	.s-instruction .btn {
-		font-size: 15px;
-		padding: 15px 30px;
+	/*transform: scale(.7);*/
+		display: block;
+		width: 90%;
+		margin: 0 auto;
 	}
 
 	.s-instruction .inner {
